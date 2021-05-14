@@ -33,7 +33,7 @@
             },
             success: function(msg) {
                 console.log(msg);
-                form.find(":reset"),trigger("click");
+                form.find(":reset").trigger("click");
                 Swal.fire(
                     'เพิ่มข้อมูล',
                     'ดำเนินการสมบูรณ์',

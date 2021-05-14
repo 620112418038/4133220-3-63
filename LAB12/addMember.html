@@ -55,8 +55,8 @@
                   Home
                 </a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./addMember.html">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./addMember.html#addMember">
 
                   ADD Member
                 </a>
@@ -167,11 +167,11 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
                         <h3>Add Member
-                            <button class="btn btn-primary" id="btn_add_member">+</button>
-                            <button class="btn btn-info" id="btn_show_member">-</button>
+                            <button class="btn btn-primary" id="btn_add_member">เพิ่ม</button>
+                            <button class="btn btn-info" id="btn_show_member">ดูตาราง</button>
                         </h3>
-                        <p>กรุณากรอกข้อความนช่องว่าง</p>
-                        <div id="div_form_add_member">
+                        <p>กรุณากรอกข้อความในช่องว่าง</p>
+                        <div id="div_from_add_member">
 
                         </div>
                     </div>
@@ -180,9 +180,6 @@
         </div>
     </section>
     <!-- About Section End -->
-
-
-    <!-- Portfolio Section Ends -->
 
     <!-- Footer Section Start -->
     <footer class="footer-area section-padding">
@@ -236,7 +233,6 @@
     <script src="assets/js/form-validator.min.js"></script>
     <script src="assets/js/contact-form-script.min.js"></script>
     <script src="assets/js/map.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
 
 </body>
@@ -244,13 +240,13 @@
 </html>
 <script>
     $(function() {
-        $("#div_form_add_member").load("./views/add_member/form_add.php");
+        $("#div_from_add_member").load("./views/add_member/form_add.php");
 
         $("#btn_add_member").click(function() {
-            $("#div_form_add_member").load("./views/add_member/form_add.php");
+            $("#div_from_add_member").load("./views/add_member/form_add.php");
         });
         $("#btn_show_member").click(function() {
-            $("#div_form_add_member").load("./models/template/list_data_table.php");
+            $("#div_from_add_member").load("./models/template/list_data_table.php");
         });
     });
 </script>

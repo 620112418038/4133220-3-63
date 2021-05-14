@@ -7,7 +7,7 @@ $dob =$_POST['dob'];
 
 
 try{
-    $SQL ="INSERT INTO tb_member
+    echo $SQL ="INSERT INTO tb_member
     VALUES ('$id','$name','$sname','$dob')
     ";
     $conn->query($SQL);
